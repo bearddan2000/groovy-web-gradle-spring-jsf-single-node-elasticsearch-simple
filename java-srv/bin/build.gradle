@@ -1,0 +1,24 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'groovy'
+}
+
+group = 'boot-gradle'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.7'
+		    implementation "org.joinfaces:primefaces-spring-boot-starter:4.3.12"
+		    implementation "javax.enterprise:cdi-api:1.2"
+		implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
+    implementation 'org.projectlombok:lombok:1.18.8'
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+}
